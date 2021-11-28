@@ -14,13 +14,18 @@
 
 <body>
     <div class="container">
-        <select id="selSort" class="form-select" aria-label="Default select example">
-            <option selected disabled>Выберите сортировку</option>
-            <option value="1">A - Z</option>
-            <option value="2">Z - A</option>
-        </select>
+        <div class="sort_select">
+            <select id="selSort" class="form-select" aria-label="Default select example">
+                <option selected disabled>Выберите сортировку</option>
+                <option value="1">A - Z</option>
+                <option value="2">Z - A</option>
+            </select>
 
-        <div class="card" style="width: 18rem;">
+            <input id="refresh" type="submit" class="btn btn-success" onclick="getValue()"></input>
+        </div>
+
+
+        <div id="rm" class="card" style="width: 18rem;">
 
         </div>
 
